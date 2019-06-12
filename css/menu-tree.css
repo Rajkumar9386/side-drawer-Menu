@@ -1,0 +1,259 @@
+﻿/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 2px solid #ddd; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+#nav-menu{
+  transition: 0.5s;
+}
+ 
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(90,90,90);
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(238, 238, 238,0.7);
+    cursor: pointer;
+}
+.sidenav a i{
+    width: 25px;
+    height: 25px;
+    text-align:center;
+    -webkit-margin-end: 24px;
+    /*transform: rotate(90deg);*/
+  }
+.rotate .fa-chevron-left{
+  -moz-transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+.rotate.down .fa-chevron-left{
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+.left-menu-search{
+    width: 95%;
+    margin: 0 auto;
+}
+#demo{
+  background-color: whitesmoke;
+}
+#left-side-icon-menu{
+    background: whitesmoke;
+    width: 56px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    border-right: 2px solid #eee;
+    transition: margin-left .5s;
+}
+.left-side-icon-menu-wrapper{
+  padding-top: 50px;
+}
+.left-side-icon-menu-wrapper a{
+  display: block;
+  font-size: 30px;
+  color: rgb(90,90,90);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.left-side-icon-menu-wrapper a img{
+  width: 30px;
+  height: 30px;
+}
+.left-side-icon-menu-wrapper a:hover, .left-side-icon-menu-wrapper a:focus{
+  color: rgba(27, 135, 237);
+  background-color: rgba(27, 135, 237,0.1);
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000;
+}
+.sidenav a:focus{
+  background-color: rgba(27, 135, 237,0.1);
+  color: rgba(27, 135, 237);
+}
+ 
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+ 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow:hidden;
+    width:100%;
+    padding-left: 60px;
+}
+body {
+  overflow-x: hidden;
+}
+ 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    /*overflow: hidden;*/
+    max-height: 50px;
+    padding-right: 20px;
+    border-radius: 0;
+}
+#nav-menu .dropdown-menu>li>a{
+  width: 100%;
+  text-align:left;
+}
+ 
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 48px;
+}
+ 
+/* Change the color of links on hover */
+.topnav a:hover,.topnav a:focus {
+    background-color: #111;
+    color: black;
+}
+ 
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+ 
+a svg{
+  transition:all .5s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+ 
+#ico{
+  display: none;
+}
+ 
+.menu{
+  background: #000;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  include border-radius(5px);
+ 
+  #transition: all 0.5s ease;
+ 
+  a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: #444;
+ 
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+ 
+    &:hover{
+      background: #555;
+    }
+  }
+}
+
+
+
+
+
+/*tree menu*/
+ul[role="tree"] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 120%;
+}
+
+[role="treeitem"].doc:before {
+    content: url(../images/file.png);
+}
+
+[role="treeitem"][aria-expanded="false"] > ul {
+  display: none;
+}
+
+[role="treeitem"][aria-expanded="true"] > ul {
+  display: block;
+}
+
+[role="treeitem"][aria-expanded="false"] > span:before {
+  content: url(../images/closed.png);
+}
+
+[role="treeitem"][aria-expanded="true"] > span:before {
+  content: url(../images/open.png);
+}
+
+[role="treeitem"],
+[role="treeitem"] span {
+  width: 9em;
+  margin: 0;
+  padding: 0;
+  border: 2px transparent solid;
+  padding: 0.125em;
+  display: block;
+}
+
+/* disable default keyboard focus styling for treeitems
+   Keyboard focus is styled with the following CSS */
+[role="treeitem"]:focus {
+  outline: 0;
+}
+
+
+[role="treeitem"].focus,
+[role="treeitem"] span.focus {
+  border-color: black;
+  background-color: #EEEEEE;
+}
+
+[role="treeitem"].hover,
+[role="treeitem"] span:hover {
+  background-color: #DDDDDD;
+}

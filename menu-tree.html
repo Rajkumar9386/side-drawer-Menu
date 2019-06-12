@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>FMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- fowntawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="css/menu-tree.css">
+  <link rel="stylesheet" href="css/style.css">
+<body>
+
+  <div id="sideNavigation" class="sidenav">
+    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+    <div class="input-group left-menu-search">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+    <a href="#"><i class="fas fa-building pull-left"></i> Company</a>
+    <a href="#"><i class="fas fa-database"></i> Depot</a>
+    <a href="#"><i class="fas fa-car"></i> Vehicles</a>
+    <a href="#"><i class="fas fa-user-astronaut"></i> Drivers</a>
+    <a href="#"><i class="fas fa-users"></i> Groups</a>
+    <a data-toggle="collapse" data-target="#zones" class="rotate"><i class="fas fa-map"></i> Zones <i class="fa fa-chevron-left pull-right"></i></a>
+    <div id="zones" class="collapse text-center">
+      <a href="#">Level 1</a>
+      <a href="#">Level 1</a>
+    <a data-toggle="collapse" data-target="#level1" class="rotate"><i class="fas fa-plus-circle"></i> Level 1 <i class="fa fa-chevron-left pull-right"></i></a>
+      <div id="level1" class="collapse text-center">
+        <a href="#">Level 2</a>
+        <a href="#">Level 2</a>
+        <a href="#">Level 2</a>
+        <a href="#">Level 2</a>
+      </div>
+    </div>
+  </div>
+  <div id="left-side-icon-menu">
+    <div class="left-side-icon-menu-wrapper">
+      <a href="#"><img src="img/comment.png"> </a>
+        <a href="#"><img src="img/shape_comment.png"></a>
+        <a href="#"><img src="img/shape.png"> </a>
+        <a href="#"><img src="img/round.png"> </a>
+        <a href="#"><img src="img/scale.png"> </a>
+    </div>
+  </div>
+ 
+  <nav class="topnav navbar">
+    <a href="#" onclick="openNav()">
+      <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="#f1f1f1" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#f1f1f1" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#f1f1f1" stroke-width="5"/>
+      </svg>
+    </a>
+    <ul class="nav navbar-nav" id="nav-menu">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+          <li><a href="#">Item 5</a></li>
+          <li><a href="#">Item 6</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+          <li><a href="#">Item 5</a></li>
+          <li><a href="#">Item 6</a></li>
+          <li><a href="#">Item 8</a></li>
+          <li><a href="#">Item 9</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+          <li><a href="#">Item 5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Help</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </nav>
+ 
+  <div id="main">
+  <!-- Add all your websites page content here  -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#home">HOME</a></li>
+              <li><a data-toggle="tab" href="#menu1">GRID</a></li>
+              <li><a data-toggle="tab" href="#menu2">MAPS</a></li>
+              <li><a data-toggle="tab" href="#menu3">REPLAY</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <h3>GRID</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <h3>MAPS</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu3" class="tab-pane fade">
+                <h3>REPLAY</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer-box" class="">
+        <div class="footer-wrapper">
+          <div class="footer-up">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Vehicles</button>
+              <button type="button" class="btn btn-default">Drivers</button>
+              <button type="button" class="btn btn-default">Zones</button>
+            </div>
+          </div>
+          <hr class="footer-horizontal-line">
+          <div class="footer-down">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Grid</button>
+              <button type="button" class="btn btn-default">Split</button>
+              <button type="button" class="btn btn-default"><i class="fas fa-globe-americas"></i>Map</button>
+              <button type="button" class="btn btn-default"><i class="fas fa-search-plus"></i>Zoom Level</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+
+<script>
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("nav-menu").style.marginLeft = "200px";
+    document.getElementById("left-side-icon-menu").style.marginLeft = "250px";
+    document.getElementById("footer-box").style.marginLeft = "250px";
+    // document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.3)";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("nav-menu").style.marginLeft = "0";
+    document.getElementById("left-side-icon-menu").style.marginLeft = "0";
+    document.getElementById("footer-box").style.marginLeft = "0";
+    // document.getElementById("main").style.backgroundColor = "#fff";
+}
+</script>
+<script type="text/javascript">
+  $(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
+</script>
+
+</body>
+</html>
